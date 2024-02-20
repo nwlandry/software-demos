@@ -145,3 +145,7 @@ cython_debug/
 test.*
 tutorials/test.*
 /.vscode
+
+# generated files
+*.json
+*.csv
