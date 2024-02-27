@@ -33,7 +33,7 @@ jobs:
     - name: Prepare tutorial notebooks
       run: |
         # go into tutorial location
-        cd docs/source/api/tutorials/ 
+        cd marchmeeting2024
         # convert each notebook into a python file
         jupyter nbconvert --to script *.ipynb
         # rename the files so they are found by pytest: add 'test' at the beginning
@@ -47,5 +47,6 @@ jobs:
 
     - name: Test tutorial notebooks
       run: |
+        cd marchmeeting2024
         # run pytest ONLY on the tutorials
         pytest --color=yes
