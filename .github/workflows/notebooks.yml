@@ -26,8 +26,7 @@ jobs:
       run: |
         sudo apt-get install -y rename
         python -m pip install --upgrade pip wheel setuptools
-        python -m pip install xgi
-        python -m pip install pytest
+        python -m pip install xgi jupyter pytest
         python -m pip list
 
     - name: Prepare tutorial notebooks
