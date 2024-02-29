@@ -149,3 +149,4 @@ tutorials/test.*
 # generated files
 *.json
 *.csv
+*.txt
